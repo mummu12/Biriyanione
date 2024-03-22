@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Epicurean - Documentation</title>
+  <link rel="shortcut icon" href="image/png/favicon.png" type="image/x-icon">
+  <!-- Bootstrap , fonts & icons  -->
+  <!-- <link rel="stylesheet" href="plugins/plugin.css"> -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="fonts/typography-font/typo.css">
+  <link rel="stylesheet" href="fonts/fontawesome-5/css/all.css">
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="plugins/prismJs/prism.css">
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+  <div class="site-wrapper overflow-hidden " id="top">
+    <header class="doc-topbar shadow-sm">
+      <div class="container-fluid">
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <svg width="50" height="50" viewBox="0 0 299 410" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M231.444 169.238C228.998 168.218 226.757 167.198 224.311 166.382C214.528 163.119 204.746 160.875 195.167 159.856C189.868 159.244 184.569 159.04 179.474 159.04C159.501 159.04 141.77 163.119 126.281 171.277C107.123 181.271 91.6338 195.14 80.4245 211.864C78.5903 214.516 76.9599 217.167 75.5332 219.819L56.1718 158.632C59.6364 158.02 63.1011 157.408 66.5658 156.184C77.9789 152.717 88.1691 146.394 96.1175 137.624C108.957 139.664 122.001 138.848 134.637 134.769C147.273 130.69 158.482 123.959 167.857 114.985C179.27 117.433 191.294 116.821 202.708 113.354C206.172 112.334 209.433 110.906 212.694 109.274L231.444 169.238Z" fill="#FD9900"/>
+              <path d="M170.099 10.5596C165.004 12.1912 160.316 14.6387 156.24 17.698C139.936 2.19737 115.887 -4.32923 92.8566 3.01319C70.0305 10.1517 53.9299 29.3236 49.65 51.3508C44.5549 51.3508 39.4597 51.9627 34.1608 53.5944C8.68518 61.7526 -5.58117 88.8788 2.57103 114.577C10.7232 140.072 37.8293 154.349 63.5087 146.191C75.5332 142.315 85.112 134.157 91.0224 123.959C103.454 128.446 117.721 129.058 131.376 124.571C145.234 120.288 156.24 111.518 163.985 100.708C174.582 105.807 187.015 107.031 199.243 103.156C224.718 94.9975 238.985 67.8713 230.833 42.1728C222.884 16.6783 195.778 2.60528 170.099 10.5596Z" fill="#FD9900"/>
+              <path d="M297.681 320.573C298.496 317.718 298.7 314.862 298.496 312.415C298.496 312.211 298.496 312.007 298.496 311.599L298.292 311.803C298.088 309.559 297.477 307.316 296.05 305.684C296.05 305.684 285.248 325.876 271.797 342.193C263.645 351.982 253.251 359.937 243.265 365.851C233.482 371.766 222.069 374.825 209.637 374.825C195.574 374.825 183.142 371.766 172.748 365.851C162.558 360.141 155.221 352.594 150.533 343.416C145.846 334.034 145.234 325.876 148.903 318.534C153.387 310.375 162.354 303.849 175.805 298.75C183.55 295.69 192.721 293.243 203.115 291.203C213.509 289.164 223.292 286.308 232.871 282.637C242.449 278.762 250.398 273.459 257.123 266.525C263.849 259.59 267.721 249.596 268.536 236.339C268.536 226.345 266.295 217.575 261.811 210.029C257.327 202.279 251.417 195.752 244.284 190.449C237.15 185.146 228.998 180.863 220.235 177.6C211.471 174.336 202.707 172.297 193.944 171.481C169.895 169.442 149.107 172.909 131.783 181.883C114.256 191.061 100.601 203.298 90.4109 218.595C80.2206 233.892 73.6989 251.228 70.8456 270.4C67.7885 289.776 68.8076 308.54 73.4951 326.488C78.1826 344.436 86.7424 360.753 99.3783 374.825C112.014 389.102 128.726 399.096 149.311 404.807C154.406 406.643 159.705 407.866 165.207 408.682C170.71 409.498 176.213 409.906 181.715 409.906C194.555 409.906 207.395 407.662 220.235 402.768C234.093 397.669 284.026 372.582 297.681 320.573ZM135.452 303.849C133.414 294.263 131.987 283.453 131.579 271.624C131.172 259.794 132.395 248.169 135.044 236.951C137.897 225.53 142.177 215.536 148.088 206.562C153.998 197.588 162.558 191.061 173.359 187.186C178.862 185.35 183.957 184.33 189.052 184.33C197.001 184.33 203.93 186.574 210.044 190.857C216.159 195.344 220.235 202.075 222.069 211.457C223.088 221.45 222.273 229.813 219.827 236.951C217.381 244.09 213.917 250.004 209.433 255.103C204.745 260.202 199.447 264.689 193.332 268.564C187.218 272.439 180.9 276.315 174.786 280.19C168.672 283.861 162.558 287.736 156.851 291.611C150.941 295.487 146.05 300.178 142.177 305.48C138.916 309.763 136.675 309.152 135.452 303.849Z" fill="#FD9900"/>
+            </svg>
+            <div class="text-wrapper m-3">
+              <p>Epicurean</p><span>Epicurean - Food & Restaurant Html Template</span>
+            </div>
+          </a>
+          <a href="mailto:wprealizer@gmail.com" class="buy-button btn btn-primary ml-auto ml-lg-4 mr-3 mr-md-4 mr-lg-0 order-lg-3">Need Help!</a>
+          <button class="mobile-toggle-btn" data-toggle="collapse" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <aside class="doc-sidebar--left collapse col-lg-3 col-xl-2 pt-25" id="sidebar">
+          <!-- 
+  <div class="sidebar-brand-block">
+    <a href=""><img src="./image/png/company-logo.png" alt=""></a>
+  </div> -->
+          <div class="sidebar-menu-group">
+            <h3 class="menu-title">
+              Getting Started
+            </h3>
+            <ul class="sidebar-menu">
+              <li><a href="index.html">Introduction</a></li>
+              <li><a href="file-structure.html">File Structure</a></li>
+              
+              <li class="active"><a href="update.html">Update</a></li>
+              
+              <li><a href="support.html">Support</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-menu-group">
+            <h3 class="menu-title">
+              Theme Intro
+            </h3>
+            <ul class="sidebar-menu">
+              <li><a href="reboot.html">Reboot</a></li>
+              <li><a href="page-default.html">Page Defaults</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-menu-group pt--40 pt-lg--50">
+            <h3 class="menu-title">
+              How-To Guides
+            </h3>
+            <ul class="sidebar-menu">
+              <li><a href="changing-logo.html">Change Site/Brand Logo</a></li>
+              
+              <li><a href="customizing-fonts.html">Linking Google Fonts</a></li>
+              <li><a href="starter-template.html">Starter Template Code</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-menu-group">
+            <h3 class="menu-title">
+              Important Plugin
+            </h3>
+            <ul class="sidebar-menu">
+              <li><a href="swiper-doc.html">Swiper</a></li>
+              <li><a href="magnific-popup.html">Magnific Popup</a></li>
+            </ul>
+          </div>
+        </aside>
+        <div class="col-lg-9 col-xl-10 offset-xl-2 offset-lg-3">
+          <div class="row justify-content-around">
+            <div class="col-lg-10 col-xl-8 py-4 py-md-5">
+              <div class="doc-breadcrumb">
+                <h2 class="title">Update</h2>
+                <p>About the updates brought by wprealizer.</p>
+              </div>
+              <hr class="my-4 my-md-4">
+              <article class="mt-4 mt-md-9" id="update">
+                <p>We are continuously creating new stuff for our themes and trying to keep it up to date with the new technologies that might appear along the development process. We appreciate each of you who downloaded or purchased any of our themes and we take your suggestions into consideration every time.</p>
+                <p>Updates will be released periodically to add new features, provide fixes where necessary, maintain compatibility, and most prior of all, give you the flexibility to customize the theme easily. Most often, the updated files are javascript or CSS and your project should need a little adjustment in order to stay up to date.</p>
+                <p>The changelog will be updated with each release and list the updated files with brief details.</p>
+                <p>To bring your project up to date with the latest version of our themes, simply download the latest version, unzip the files and replace the old version in your project with the updated version of our file mentioned in changelog. (Caution: It's best practice keep a backup of your previous customized CSS and js in case it needs to be readded) </p>
+                <p>Any breaking changes that affect compatibility with older versions of our themes will be noted, and further instructions on updating will be provided in the changelog.</p>
+              </article>
+            </div>
+            <div class="col-xl-2">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Vendor Scripts -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="plugins/jquery/jquery-migrate.min.js"></script>
+  <script src="plugins/bootstrap-4/js/bootstrap.bundle.min.js"></script>
+  <!-- Plugin's Scripts -->
+  <script src="plugins/prismJs/prism.js"></script>
+  <!-- Activation Script -->
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
